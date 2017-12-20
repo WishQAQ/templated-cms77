@@ -1,0 +1,2 @@
+<div title="[field:title/]" alt="[field:title/]" onclick="window.open('[field:tourl/]')" class="bgitem" id="flashbg[field:global name=autoindex runphp="yes"]@me=@me-1;[/field:global]"  style="background: url('[field:imgurl/]') no-repeat scroll center top;
+            height: 491px;cursor:pointer; width: 100%; margin:0 auto;;"></div>

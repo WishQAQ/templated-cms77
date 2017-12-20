@@ -1,0 +1,1 @@
+<li ><a href="[field:typedir function="cn_substr(@me,200,9) " /]" target="_blank" title="[field:typename/]">[field:typename/]</a></li>

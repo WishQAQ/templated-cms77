@@ -1,0 +1,1 @@
+ <a href="[field:typeurl/]" title="[field:typename/]" style="padding:0px 8px;margin:0px;">[field:typename/]</a>

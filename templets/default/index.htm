@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/Skins/Default/resetcommon.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/JS/NSW_Index.js"></script>
+<script type="text/javascript" src="/JS/ScrollPicLeft.js"></script>
+</head>
+<body>
+<!--头部开始-->
+{dede:include filename="head.htm"/}
+ <!--头部结束-->
+    <!--主内容开始-->
+    <div class="id_ban pr">
+	
+        <div class="ban_m" id="flashs">
+		    {dede:arclist typeid="15" row='3' addfields='tourl,imgurl' channelid='7'}
+            <div title="[field:title/]" alt="[field:title/]" onclick="window.open('[field:tourl/]')" class="bgitem" id="flashbg[field:global name=autoindex runphp="yes"]@me=@me-1;[/field:global]"  style="background: url('[field:imgurl/]') no-repeat scroll center top;
+            height: 491px;cursor:pointer; width: 100%; margin:0 auto;;"></div>
+			 {/dede:arclist}
+        <script type="text/javascript" src="/js/flash.js"></script>
+        </div> 
+	
+    </div>
+    <div class="con_wrap">
+        <!--感谢以下客户20年来对克劳德的大力支持-->
+        
+
+<div class="bra">
+    <div class="bra_m content">
+        <h4>
+		{dede:type typeid="7"}
+            <a title="感谢以下客户对克劳德的大力支持" href="[field:typeurl/]">
+                感谢以下客户对克劳德的大力支持</a>
+				{/dede:type}
+				</h4>
+        <div class="slide_m fixed">
+            <a id="Left_ding1" style="cursor: pointer;" class="btn btn_l fl"></a>
+            <div class="slide_c fl" id="ISL_Cont_1d1" style="float: left;">
+                <ul>
+                            {dede:arclist typeid="7" row="10"}
+                            <li><a href="[field:arcurl/]" title="[field:title/]">
+                                <img class="classname" style="display: inline;" src="[field:picname/]"
+                                    alt="[field:title/]" title="[field:title/]" /></a> <span><a href="[field:arcurl/]"
+                                        title="[field:title/]">
+                                        [field:title/]</a></span> </li>
+                            {/dede:arclist}
+                        
+                </ul>
+            </div>
+            <a style="cursor: pointer;" id="Right_ding1" class="btn btn_r fl"></a>
+        </div>
+    </div>
+</div>
+
+<script language="javascript" type="text/javascript">
+    new ScrollPicleft("ISL_Cont_1d1", "Left_ding1", "Right_ding1", "890", "890") 
+</script>
+
+        <div class="pro_box">
+            <div class="pro fixed">
+                <!--产品分类展示-->
+                
+<div class="i_lf fl">
+    <h3>
+       {dede:type typeid="2"}
+            <a title="[field:typename/]" href="[field:typeurl/]">
+                [field:typename/]</a>
+				{/dede:type}</h3>
+	{dede:channelartlist typeid=2 row="10"} 
+                <h4>
+                    <a href="{dede:field.typeurl/}"
+                        target="_blank" title="{dede:field.typename/}">
+                        {dede:field.typename/}</a></h4>
+                <ul>
+                        {dede:sql sql='Select * from ry_arctype where reid=~id~ ORDER BY id'} 
+                            <li ><a href="[field:typedir function="cn_substr(@me,200,9) " /]" target="_blank" title="[field:typename/]">[field:typename/]</a></li>
+                            {/dede:sql}
+                        
+                    <div class="clear"></div>
+                </ul>
+            {/dede:channelartlist}
+     {dede:type typeid="2"}<a href="[field:typeurl/]" title="[field:typename/]">
+        <img src="/Skins/Default/Img/Index/pro_searve.jpg" width="235" height="411" alt="[field:typename/]"
+            title="[field:typename/]" /></a>{/dede:type}
+</div>
+
+
+                <div class="i_rt fr">
+                  
+
+                    <!--特色刀片产品-->
+                    
+{dede:channelartlist typeid=2 row="3"} 
+<div class="t_t3 t_t4 fixed">
+    <h4 class="fl fixed">
+        <a href="{dede:field.typeurl/}" title="{dede:field.typename/}">
+            {dede:field.typename/}</a><em>/&nbsp;&nbsp;features</em></h4>
+    <a href="{dede:field.typeurl/}" title="{dede:field.typename/}" class="more fr">
+        + 更多</a>
+</div>
+<ul class="pro_list fixed">
+            {dede:arclist row="3"}
+            <li><a href="[field:arcurl/]" title="[field:title/]">
+                <img class="classname" style="display: inline;" _src="/UploadFiles/Others/20141021V6028V4F68.jpg" src="[field:picname/]"
+                    alt="[field:title/]" title="[field:title/]" />
+            </a><span><a href="[field:arcurl/]" title="[field:title/]">
+                 [field:title/]</a></span>
+                <p class="fixed">
+                    <a href="[field:arcurl/]" title="[field:title/]">
+                        产品详情 >></a><a title="批发咨询" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=87886663&site=qq&menu=yes">批发咨询
+                            >></a></p>
+            </li>
+			{/dede:arclist}
+        
+</ul>
+{/dede:channelartlist}
+
+                </div>
+            </div>
+        </div>
+        <div class="s_ban">
+            <div class="ban_m content pr">
+                <span class="pa"><b>全国咨询热线</b><em>{dede:global.rexian/}</em></span>
+            </div>
+        </div>
+        <div class="adv">
+            <div class="adv_m pr">
+                <h3 class="pa">
+                    <img src="/Skins/Default/Img/Index/adv_tl.png" width="613" height="96" alt="" /></h3>
+                <div class="adv_b_m">
+                    <div class="adv_1 fixed">
+                        <ul class="adv_u_1 fr">
+                            <h4>
+                                20年专注剃须刀片领域，打造国内外顶尖刀片品牌 <em>15 years of professional focus, cast is special</em>
+                            </h4>
+                            <li class="first">克劳德自1999年成立以来，累积了丰富的生产研发经验,超过<em>7000平方米</em>的生产车间，集刀片<em>研发、设计、生产</em>为一体,克劳德拥有专业的研发生产能力和雄厚的生产实力，是您合作的首选。</li>
+                        </ul>
+                        <img src="/Skins/Default/Img/Index/adv_01.png" class="fl">
+                    </div>
+                    <div class="adv_2 fixed">
+                        <ul class="adv_u_2 fl">
+                            <h4>
+                                严谨完善的质量控制体系，让产品质量更稳定 <em>Strict perfect quality control system, make product quality
+                                    more stable</em>
+                            </h4>
+                            <li class="first">产品用料和加工工艺国内外首屈一指,公司拥有先进的检测技术和完整的质量控制系统,<em>严格遵照ISO9001国际质量认证体系管理</em>和控制生产过程，确保<em>产品合格率达到99.99%</em>。</li>
+                        </ul>
+                        <img src="/Skins/Default/Img/Index/adv_02.png" class="fr">
+                    </div>
+                    <div class="adv_3 fixed">
+                        <ul class="adv_u_3 fr">
+                            <h4>
+                                品质有保障，客户满意度和回头率高 <em>High quality guaranteed, customer satisfaction and retention</em>
+                            </h4>
+                            <li class="first">近百人的专业技术团队，<em>7条全自动化生产流水线</em>，年生产量可达2.5亿片，完全满足您的供货要求，引进先进的磁控溅射镀膜机，采用纳米氮合金技术强化刀锋，使刀片更加持久、锋利、耐用，大大提高客户满意度和回头率！</li>
+                        </ul>
+                        <img src="/Skins/Default/Img/Index/adv_03.png" class="fl">
+                    </div>
+                    <div class="adv_4 fixed">
+                        <ul class="adv_u_4 fl">
+                            <h4>
+                                贴心的优惠政策，为您的利益保驾护航 <em>The interests of the kind of preferential policies for you</em>
+                            </h4>
+                            <li class="first">欢迎广大新老客户惠顾，克劳德<em>100%从客户角度出发</em>，最大化保障客户利益<br />
+                              保质/保量/及时完成您的供货要求。多种服务支持和贴心政策：辅导经销商进行产品销售；提供新产品试销；并独家承诺让客户不会有库存之忧。 <span>立即来电咨询：<b>400-9915-887</b></span></li>
+                        </ul>
+                        <img src="/Skins/Default/Img/Index/adv_04.png" class="fr">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--客户案例-->
+        
+
+<div class="sight">
+    <div class="sight_m pr">
+	 {dede:type typeid="8"}
+        <div class="t_t3 t_t4 fixed pa">
+            <h4 class="fl fixed">
+              
+            <a title="[field:typename/]" href="[field:typeurl/]">
+                [field:typename/]</a>
+				</h4>
+            <a title="[field:typename/]" href="[field:typeurl/]"
+                class="more fr">更多>></a>
+        </div>
+		{/dede:type}
+        <ul class="fixed">
+            
+                   
+                    {dede:arclist typeid="8" row="3"}
+                    <li [field:global name=autoindex runphp="yes"]if(@me=2)@me="class=mid";else @me="";[/field:global]>
+					<a class="pic_lk" href="[field:arcurl/]"
+                        title="[field:title/]">
+                        <img class="classname" style="display: inline;" _src="[field:picname/]"
+                            alt="[field:title/]" title="[field:title/]" /></a>
+                        <h5>
+                            <a title="[field:title/]"  href="[field:arcurl/]">
+                                [field:title/]</a><span></span></h5>
+                        <p>[field:info/]</p>
+                        <a href="[field:arcurl/]" class="s_check">
+                            <img src="/Skins/Default/Img/Index/sight_check.gif" alt="[field:title/]" title="[field:title/]" /></a>
+                    </li>
+					{/dede:arclist}
+                
+                   
+                
+        </ul>
+    </div>
+</div>
+
+
+        <!--荣誉资质-->
+        
+
+<div class="hon content">
+    <div class="hon_m">
+        <h4>
+            <img src="/Skins/Default/Img/Index/hon_t.png" width="808" height="60" alt="" /></h4>
+        <div class="hon_ul fixed">
+            <div class="hon_ul_t fl">
+                <ul>
+                        {dede:arclist typeid="5" row="4"}
+                        <li>><a title="[field:title/]" href="[field:arcurl//]">[field:title/]</a></li>
+                        {/dede:arclist}  
+                </ul>
+                <a title="查看更多" href="/about/rongyu"
+                    class="hon_more">
+                    <img src="/Skins/Default/Img/Index/hon_more.png" alt="查看更多" title="查看更多" /></a>
+            </div>
+            <div class="slide fr">
+                <img src="/Skins/Default/Img/Index/hon_sl_btn.png" width="48" height="197" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div class="a_c content fixed">
+            <!--关于克劳德-->
+            
+        <div class="ab fl">
+            <div class="t_t3 t_t4 fixed">
+                <h4 class="fl fixed">
+                    <a title="克劳德简介" href="/about">
+                        关于克劳德</a><em>/&nbsp;&nbsp; ABOUT US</em></h4>
+                <a title="克劳德简介" href="/about"
+                    class="more fr">+ 更多</a>
+            </div>
+            <div class="cul">
+                <dl class="fixed dl_sm">
+                    <dt class="fl">
+             <div class="tc mt5"><embed src="{dede:global.videourl/}" allowFullScreen="true" quality="high" width="293" height="232" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></div>
+                    </dt>
+                    <dd class="fl">
+                        <p>
+                            上海克劳德刀片制造有限公司坐落于历史悠久，风景秀丽的上海市松江城区，占地面积12亩，生产车间面积达7000平方米，是一家集刀片研发，设计，生产和销售为一体的专业刀片制造企业。公司创建于1999年，总投资1000万。现有博士生1名，本专科生5名，高级工程师3名，技术员工15名，普通员工40名，7条自动生产流水线，年产量可达2.5亿片。
+							2004年，公司斥资引进了具有业内先进水平的磁控溅射镀膜机，采用纳米氮合金技术强化刀锋，
+							在经过精密加工的刀片刃口上分别镀覆纳米铬，氮化铬合金，特氟龙涂层，增强了刀锋的强度和锋利度，使刀片更加持久锋利，耐用。</p>
+                        <span><a title="克劳德简介" href="/about">
+                            <img src="/Skins/Default/Img/Index/ab_more.gif" width="80" height="35" alt="克劳德简介"
+                                title="克劳德简介" /></a></span>
+                    </dd>
+                </dl>
+                <!--公司动态-->
+                
+
+<div class="fl t_d4">
+    <h4 class="fl fixed">
+            {dede:type typeid="32"}<a title="[field:typename/]" href="[field:typeurl/]">
+            [field:typename/]</a>
+			{/dede:type}
+			<em></em></h4>
+    <ul class="n_li ">
+                 {dede:arclist typeid="32" row="5"}
+                        <li><a title="[field:title/]" href="[field:arcurl//]">[field:title/]</a></li>
+				{/dede:arclist} 
+            
+    </ul>
+</div>
+
+
+                <!--产品优势-->
+                
+
+<div class="fl t_d4">
+    <h4 class="fl fixed">
+         {dede:type typeid="33"}<a title="[field:typename/]" href="[field:typeurl/]">
+            [field:typename/]</a>
+			{/dede:type}<em></em></h4>
+    <ul class="n_li qbg">
+        
+               {dede:arclist typeid="33" row="5"}
+               <li><a title="[field:title/]" href="[field:arcurl//]">[field:title/]</a></li>
+				{/dede:arclist} 
+            
+    </ul>
+</div>
+            </div>
+        </div>
+            <div class="con fr">
+                <div class="t_t3 t_t4 fixed">
+                    <h4 class="fl fixed">
+                        <a href="/Helps/lxkld.html" title="联系克劳德">联系克劳德</a><em>/&nbsp;&nbsp; contact US</em></h4>
+                    <a href="/Helps/lxkld.html" title="联系克劳德" class="more fr">+ 更多</a>
+                </div>
+                <div class="con_m">
+                    <div class="con_t">
+                        <a href="/contact" title="克劳德总部">
+                            <img src="/Skins/Default/Img/Index/con_map.jpg" alt="克劳德总部" title="克劳德总部" /></a>
+                        <span><a href="/contact" title="克劳德总部">克劳德总部</a></span>
+                        <p>
+                            <b>地 址：</b>{dede:global.add/}<br />
+                            <b>联系电话</b>：{dede:global.rexian/}&nbsp;&nbsp;{dede:global.tel/}</p>
+                    </div>
+                    <ul class=" fixed">
+                        <li><a href="/contact" title="克劳德广州办事处">克劳德广州办事处</a></li>
+                        <li><a href="/contact" title="克劳德合肥办事处">克劳德合肥办事处</a></li>
+                        <li><a href="/contact" title="克劳德临沂办事处">克劳德临沂办事处</a></li>
+                        <li><a href="/contact" title="克劳德武汉办事处">克劳德武汉办事处</a></li>
+                        <li><a href="/contact" title="克劳德台州办事处">克劳德台州办事处</a></li>
+                        <li class="cur"><a href="/contact" title="了解更多">了解更多</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--企业相册-->
+        
+
+<div class="gal">
+    <div class="gal_m content">
+	    {dede:type typeid="10"}
+        <div class="t_t3 t_t4 fixed">
+            <h4 class="fl fixed">
+                <a title="[field:typename/]" href="[field:typeurl/]">
+                    [field:typename/]</a><em>/&nbsp;&nbsp; Album</em></h4>
+            <a title="[field:typename/]" href="[field:typeurl/]"
+                class="more fr">更多>></a>
+        </div>{/dede:type}
+        <div class="slide_m fixed">
+            <a id="Left_ding2" style="cursor: pointer;" class="btn btn_l fl"></a>
+            <div class="slide_c fl">
+                <ul id="ISL_Cont_1d2" style="float: left;">
+                        {dede:arclist typeid="10" row="10"}
+                            <li><a href="[field:arcurl/]" title="[field:title/]">
+                                <img class="classname" style="display: inline;"  src="[field:picname/]"
+                                    alt="[field:title/]" title="[field:title/]" /></a>  </li>
+                        {/dede:arclist}
+                        
+                </ul>
+            </div>
+            <a style="cursor: pointer;" id="Right_ding2" class="btn btn_r fl"></a>
+        </div>
+    </div>
+</div>
+
+<script language="javascript" type="text/javascript">
+    new ScrollPicleft("ISL_Cont_1d2", "Left_ding2", "Right_ding2", "891", "890") 
+</script>
+
+        <div class="n_q content fixed">
+            <!--行业新闻-->
+            
+
+<div class="news fl">
+{dede:type typeid="11"}
+    <div class="t_t3 t_t4 fixed">
+        <h4 class="fl fixed">
+            <a title="[field:typename/]" href="[field:typeurl/]">
+                [field:typename/]</a><em>/&nbsp;&nbsp; news</em></h4>
+        <a title="[field:typename/]" href="[field:typeurl/]"
+            class="more fr">+ 更多</a>
+    </div>{/dede:type}
+    <dl class="fixed">
+        <dt class="fl">
+            <div class="b_show">
+               {dede:arclist typeid="11" row="1" flag="p"}
+			   <a  target=_blank href='[field:arcurl/]' title='[field:title/]'><img src='[field:picname/]' alt='[field:title/]' title='[field:title/]' /></a>
+			   </div>{/dede:arclist}
+            <ul class="fixed">
+			{dede:arclist typeid="11" limit="1,2" flag="p"}
+                <li>
+                    <a  target=_blank href='[field:arcurl/]' title='[field:title/]'><img src='[field:picname/]' alt='[field:title/]' title='[field:title/]' /></a></li>
+              {/dede:arclist}
+            </ul>
+        </dt>
+        <dd class="fl">
+                     {dede:arclist typeid="11" row="1"}
+                    <h5>
+                        <a href="[field:arcurl/]" title="[field:title/]">
+                            [field:title/]</a></h5>
+                    <p>[field:info/]</p>
+                    <span><a href="[field:arcurl/]" title="[field:title/]">
+                        <img src="/Skins/Default/Img/Index/ab_more.gif" width="80" height="35" alt="[field:title/]"
+                            title="[field:title/]" /></a></span>
+					{/dede:arclist}
+                
+            <ul>
+                 {dede:arclist typeid="11" limit="1,6"}
+                        <li><a href="[field:arcurl/]" title="[field:title/]">
+                            [field:title/]</a></li>
+                        
+                 {/dede:arclist}
+            </ul>
+        </dd>
+    </dl>
+</div>
+
+
+            <!--常见问题解答-->
+            
+
+<div class="wenda fr">
+   {dede:type typeid="12"}
+    <div class="t_t3 t_t4 fixed">
+        <h4 class="fl fixed">
+            <a title="[field:typename/]" href="[field:typeurl/]">
+                [field:typename/]</a><em>/&nbsp;&nbsp; FAQ</em></h4>
+        <a title="[field:typename/]" href="[field:typeurl/]"
+            class="more fr">+ 更多</a>
+    </div>{/dede:type}
+    <div class="wd_m" id="ulOrderAnns">
+        {dede:arclist typeid="12" row="8"}
+                <dl >
+                    <dt><a title="[field:title/]" href="[field:arcurl/]">
+                        [field:title/]</a></dt>
+                    <dd>[field:info/]</dd>
+                </dl>
+            {/dede:arclist}
+            
+    </div>
+</div>
+<script type="text/javascript">
+    new Marquee("ulOrderAnns", 0, 1, 300, 420, 40, 0, 1000, 22);
+</script>
+
+
+        </div>
+    </div>
+    <!--主内容结束-->
+    <!--低部开始-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>

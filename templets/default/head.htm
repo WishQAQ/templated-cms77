@@ -1,0 +1,90 @@
+
+<div class="h_wrap">
+    <div class="h_top">
+        <div class="header fixed">
+            <p class="fl">
+                欢迎光临克劳德刀片官方网站！</p>
+            <p class="top_right fr">
+                <a
+                        href="/about" title="关于克劳德">关于克劳德</a>|<a href="/data/sitemap.html" title="网站地图" target=_blank>网站地图</a>|<a href="javascript:void(0);" onclick="javascript:addBookmark(this)" title="加入收藏">加入收藏</a>
+            </p>
+        </div>
+    </div>
+    <div class="h_mid">
+        <div class="header fixed">
+            <div class="logo fl fixed">
+                <h1 class="fl">
+                    <a href="/" title="克劳德刀片">
+                        <img src="/UploadFiles/Others/20140314093108_83089.gif"
+                            alt="克劳德刀片" title="克劳德刀片"
+                            width="116" height="111" /></a></h1>
+                <p class="fl">
+                    <b>20年专业剃须刀片制造商</b> <span> &nbsp;&nbsp打造国内外顶尖刀片品牌
+</span>
+                </p>
+            </div>
+            <div class="phone fr fixed">
+                <span class="fl">克劳德全国热线：</span> <em class="fixed">
+                   {dede:global.rexian}<br />
+                    {dede:global.tel/}<br>{dede:global.phone/}<br>
+                    </em>
+            </div>
+        </div>
+    </div>
+    <div class="nav fixed">
+        <ul class="content" id="content">
+            <li class="cur"><a href="/" title="克劳德首页">克劳德首页</a></li>
+           
+		   {dede:channelartlist row="10" typeid="1,2,8,3,6"} 
+		 
+            <li><a href="{dede:field.typeurl/}"
+                title="{dede:field.typename/}">{dede:field.typename/}</a>
+               <span style="z-index: 999; top:47px; left:1px;display: none;position: absolute;background: none repeat scroll 0 0 #023054;width: 131px;" class="xiala">
+                       {dede:sql sql='Select * from ry_arctype where reid=~id~ ORDER BY id'} 
+                        <a class="xialajia" title="[field:typename/]" href="[field:typedir function="cn_substr(@me,200,9) " /]">[field:typename/]</a>
+						 {/dede:sql}
+                    </span>
+                </li>
+            {/dede:channelartlist}
+        </ul>
+    </div>
+</div>
+<div class="link_main fixed">
+    <div class="content">
+        <div class="s_lk_m">
+            <div class="link fl">
+                <b>您是否在搜：</b><span id="commonHeaderkeywords"></span></div>
+            <div class="search fr">
+			
+                <div class="s_m">
+				<form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+				<input type="hidden" name="kwtype" value="0" />
+                    <input name="q" type="text" onblur="if(this.value==''){this.value='请输入关键词'}" value="请输入关键词"
+                        id="seachkeywords" onclick="this.value=''" class="input" />
+                    <input type="submit" value="" class="submit" onclick="SearchObjectByGet('seachkeywords,kwd','/Search/index.aspx?1=1&objtype=product',false)" />
+                </form>
+				</div>
+				
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    muneCur2();
+    initCommonHeader();
+    if (MARK == "" || MARK == null) var MARK = "index";
+    initCommonHeaderKeywords(MARK);  
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#content li").mouseover(function () {
+            $(this).find("span").show();
+            // $(this).css("z-index", "99");
+        })
+        $("#content li").mouseout(function () {
+            $(this).find("span").hide();
+        })
+    })
+</script>

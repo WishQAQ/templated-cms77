@@ -1,0 +1,1 @@
+INSERT INTO `dede_search_keywords` VALUES('1','测','测','1','1','1422254818','0','0');

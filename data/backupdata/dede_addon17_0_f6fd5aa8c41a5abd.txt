@@ -1,0 +1,3 @@
+INSERT INTO `dede_addon17` VALUES('1','15','','','127.0.0.1','/UploadFiles/Others/20141114170414_52985.jpg','/product');
+INSERT INTO `dede_addon17` VALUES('2','15','','','0.0.0.0','/UploadFiles/Others/20141114165940_26871.jpg','/product');
+INSERT INTO `dede_addon17` VALUES('3','15','','','0.0.0.0','/UploadFiles/Others/20141114162008_11936.jpg','/producct');

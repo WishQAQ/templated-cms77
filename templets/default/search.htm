@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <script language="javascript">
+        var MARK = "product";
+    </script>
+<script type="text/javascript">SKIN_PATH="/Skins/default/";</script>
+<link href="/Skins/default/resetcommon.css" rel="stylesheet" type="text/css" />
+<link href="/Skins/default/Style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/JS/NSW_JCIA.js"></script>
+</head>
+<body>
+    <!--Header:Start-->
+     {dede:include filename="head.htm"/}
+    <!--Header:End-->
+    <!--Content:Start-->
+    <div class="content">
+        <div class="topadcs">
+            <a  target=_blank href='/product/' title=''>
+			<img src='/UploadFiles/Others/20140310205656_58015.jpg' /></a>
+        </div>
+        <div class="rightl">
+            <div class="righttop">
+            </div>
+            
+<div class="plc">
+    <span><span class="dang">当前位置：</span>
+	{dede:field.position/}</span>
+	
+</div>
+            <div class="rightbot">
+            </div>
+            <div class="righttop">
+            </div>
+            <div class="right_main">
+                <div class="news_con">
+                    
+                          {dede:list perpage='10'}
+                            <dl class="news_dl">
+                                <dt><a class="dt_1" title="[field:title/]" target="_blank" href="[field:arcurl/]">
+                                    [field:title/]</a><span class="dt_2">[
+                                        [field:pubdate function="MyDate('Y-m-d',@me)"/]
+                                        ]</span></dt>
+                                <dd>
+                                  [field:info/]</dd>
+                            </dl>
+                             {/dede:list}
+                    <div class="clear">
+                    </div>
+                    <!--OranPager:start
+Developed By Oran Day(oransite#gmail.com)
+Version:1.1.0.9
+Aug. 28, 2009
+All rights reserved.-->
+<div class="apage" id="pagerMain">
+<div class="fenye">
+				   <ul>
+				   {dede:pagelist listsize='3' listitem='index pre pageno next end'/} 
+				   </ul>
+				</div>
+</div>
+<!--OranPager:end-->
+
+                </div>
+
+
+            </div>
+            <div class="rightbot">
+            </div>
+        </div>
+        {dede:include filename="right.htm"/}
+        <div class="clear">
+        </div>
+    </div>
+    <!--Content:End-->
+    <!--Footer:Start-->
+    
+     {dede:include filename="footer.htm"/}
+    <!--Footer:End-->
+</body>
+</html>

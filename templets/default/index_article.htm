@@ -1,0 +1,99 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="/Skins/default/resetcommon.css" rel="stylesheet" type="text/css" />
+    <link href="/Skins/default/Style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/JS/NSW_DetailsPro.js"></script>
+    <script language="javascript">
+<!--
+        window.onerror = function () { return true; }
+// -->
+    </script>
+	<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/js/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+getCookies({dede:field.id/},'{dede:field.title/}','{dede:field.litpic/}')
+function CheckLogin2(){
+ var taget_obj = document.getElementByIdx_x_x('_userlogin');
+ myajax = new DedeAjax(taget_obj,false,false,'','','');
+ myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta2.php");
+ DedeXHTTP = null;
+}
+</script>
+</head>
+<body>
+    {dede:include filename="head.htm"/}
+<script type="text/javascript">
+    var OBJ_TITLE = "{dede:field.title/}";
+    var OBJ_ID = "419";
+    var MARK = "news";
+    var ARR_AD_MARK = ["news_detail_1", "news_detail_2", "news_detail_3"];
+    var SID = "0001,0019,0020";
+    //权限ID
+    var AUTHORITY_ID = "";
+</script>
+<script src="/JS/Cls_jsPage.js"></script>
+<!--content:start-->
+<div class="content">
+    <div class="topadcs">
+        <a href="/product/" target="_blank"><img src="/UploadFiles/Others/20140310205830_35054.jpg"></a>
+    </div>
+    <div class="rightl">
+        <div class="righttop">
+        </div>
+        <div class="plc">
+            <span class="">{dede:field name='position'/}</span>
+        </div>
+        <div class="rightbot">
+        </div>
+        <div class="righttop">
+        </div>
+        <div class="right_main">
+            <div class="agent_con">
+                <div class="age_li_about">
+                 {dede:field.content/}
+				 </div>
+              
+            </div>
+        </div>
+        <div class="rightbot">
+        </div>
+    </div>
+    <div class="leftr">
+        <div class="leib">
+            <div class="tit">
+			<a title="关于我们" href="/about">关于我们</a></div>
+			<div class="nr"><ul>
+			{dede:channel row="10" type="son" typeid="1"}
+			<li class=""><a title="[field:typename/]" href="[field:typeurl/]">[field:typename/]</a></li>
+			{/dede:channel}
+			</ul></div>
+        </div>
+        <div class="leftbot">
+        </div>
+        <div class="leib3 mt10">
+        <div class="tit">联系克劳德</div>
+        <div class="nr">
+            <img src="/images/leftlx.gif" >
+<h5 >{dede:global.company/}</h5>
+<p><span>公司电话：</span>{dede:global.rexian/}</p>
+<p><span>公司传真：</span>{dede:global.fax/}</p>
+<p><span>企业QQ：</span>{dede:global.qq/}</p>
+<p><span>公司地址：</span>{dede:global.add/}</p>
+</div></div></div>
+    </div>
+    <div class="clear">
+    </div>
+
+<!--content:end-->
+{dede:include filename="footer.htm"/}
+
+    <!--Footer:End-->
+</body>
+</html>

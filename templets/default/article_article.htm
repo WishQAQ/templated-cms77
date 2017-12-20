@@ -1,0 +1,190 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="/Skins/default/resetcommon.css" rel="stylesheet" type="text/css" />
+    <link href="/Skins/default/Style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/JS/NSW_DetailsPro.js"></script>
+    <script language="javascript">
+<!--
+        window.onerror = function () { return true; }
+// -->
+    </script>
+	<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/js/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+getCookies({dede:field.id/},'{dede:field.title/}','{dede:field.litpic/}')
+function CheckLogin2(){
+ var taget_obj = document.getElementByIdx_x_x('_userlogin');
+ myajax = new DedeAjax(taget_obj,false,false,'','','');
+ myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta2.php");
+ DedeXHTTP = null;
+}
+</script>
+</head>
+<body>
+    {dede:include filename="head.htm"/}
+<script type="text/javascript">
+    var OBJ_TITLE = "{dede:field.title/}";
+    var OBJ_ID = "419";
+    var MARK = "news";
+    var ARR_AD_MARK = ["news_detail_1", "news_detail_2", "news_detail_3"];
+    var SID = "0001,0019,0020";
+    //权限ID
+    var AUTHORITY_ID = "";
+</script>
+<script src="/JS/Cls_jsPage.js"></script>
+<!--content:start-->
+<div class="content">
+    <div class="topadcs">
+        <a  target=_blank href='/product/' ><img src='/UploadFiles/Others/20140310205728_74508.jpg' /></a>
+    </div>
+    <div class="plc2">
+        当前位置：{dede:field.position/}
+			</div>
+    <div class="left2">
+        <div class="left2top">
+        </div>
+        <div class="left2_main">
+            <div class="n_info_con" id="printableview">
+                <h1>
+                    {dede:field.title/}</h1>
+                <div class="info_con_tit">
+                    <div class="info_con_tit">
+                        <div class="n_tit">
+                            <span>文章出处：{dede:field.source/}</span><span>责任编辑：{dede:adminname/}</span><span>作者：{dede:field.writer/}</span><span>人气：<span
+                                id="cntrHits"><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>
+   </span></span><span>发表时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span><span class="tit2_span">
+                                    字体大小:【 <a onclick="$j('cntrBody p').css('font-size','16px');$(this).parent().children().removeClass('cur');$(this).addClass('cur');" href="javascript:void(0)">
+                                        大</a> <a class="cur" onclick="$j('cntrBody p').css('font-size','14px');$(this).parent().children().removeClass('cur');$(this).addClass('cur');" href="javascript:void(0)">
+                                            中</a> <a onclick="$j('cntrBody p').css('font-size','12px');$(this).parent().children().removeClass('cur');$(this).addClass('cur');" href="javascript:void(0)">
+                                                小</a> 】 </span>
+                        </div>
+                    </div>
+                </div> <div class="clear"></div>
+                <div id="cntrBody">
+               {dede:field.body/}                   
+				   </div>
+                
+                <div class="gduo">
+                    <span>{dede:prenext get='next'/}</span>{dede:prenext get='pre'/}</div>
+            </div>
+           
+            <div class="n_info_con2">
+                <h4 class="t04">
+                    相关资讯</h4>
+                <div class="info_b">
+                    <ul class="p_list_ul">
+					    {dede:arclist typeid="3" row="8"}
+                        <li><a target='_blank' href='[field:arcurl/]' title='[field:title/]'>[field:title/]</a></li>
+						{/dede:arclist}
+                    </ul>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="n_info_tjcp">
+                <h4 class="t04">
+                    推荐产品</h4>
+				{dede:arclist typeid="2" row="3"}
+                <dl>
+				<dt><a title='[field:title/]' target="_blank" href='[field:arcurl/]'>
+				<img title='[field:title/]' alt='[field:title/]' src='[field:picname/]'></a>
+				</dt>
+				<dd>
+				<a title='[field:title/]' target="_blank" href='[field:arcurl/]'>[field:title/]</a></dd></dl>
+				{/dede:arclist}
+            </div>
+        </div>
+        <div class="left2bot">
+        </div>
+    </div>
+    <div class="right2">
+        <div class="right2top">
+        </div>
+        <div class="right2_main">
+           <h4>
+              <img alt="排行榜" src="/Skins/Default/Img/paihang.gif"></h4>
+            <div id="newpro">
+			{dede:arclist typeid="3" row="3" flag="c"}
+			<h5 class="cur"><a target="_blank" title="[field:title/]" href="[field:arcurl/]">[field:title/]</a></h5>
+			<dl>
+			<dt><a target="_blank" title="[field:title/]" href="[field:arcurl/]">
+			<img alt="[field:title/]" title="[field:title/]" src="[field:picname/]"></a>
+			</dt>
+			<dd>[field:info/]
+			</dd>
+			<div class="clear"></div>
+			</dl>
+			{/dede:arclist}
+			
+</div>
+            <h4 class="t03">
+                <a href="/news" title="同类文章排行">同类文章排行</a></h4>
+            <ul class="n_rt_ul">
+			{dede:arclist typeid="3" orderby="hit" row="10"}
+             <li><a href='[field:arcurl/]' target='_blank' title="[field:title/]">
+			 [field:title/]</a></li>
+			 {/dede:arclist}
+			 </ul>
+            <h4 class="t03">
+                <a href="/news" title="最新资讯文章">最新资讯文章</a></h4>
+            <ul class="n_rt_ul" id="cntrLastArticle">
+            </ul>
+            <h4 class="t03">
+                您的浏览历史</h4>
+            <ul class="n_rt_ul" id="divHistoryCntr">
+                <img src="/Skins/default/Img/processing_3.gif" alt="正在加载..." />
+            </ul>
+			 <ul class="n_rt_ul" id="viewHistory">
+<script type="text/javascript">
+function destroy_cookie(){
+SetCookie('id','',1);
+SetCookie('products','',1);
+SetCookie('images','',1);
+document.getElementByIdx_x_x('viewHistory').innerHTML="";
+window.alert('你已成功清除浏览历史记录！');
+}
+
+</script>
+<script type="text/javascript">
+            var saveid = GetCookie('id');
+            var savetitle = GetCookie('products');
+var saveimg = GetCookie('images');
+            if(saveid != null && savetitle != null)
+            {
+                var saveids = saveid.split(',');
+                var savetitles = savetitle.split(',');
+var saveimgs = saveimg.split(',');
+                var hasid = false;
+                saveid = '';
+                savetitle = '';
+saveimg = '';
+           for(i=saveids.length-1;i>=0;i--)
+           {
+ 
+              document.write("<li>" +"<a href=\"/plus/view.php?aid="+saveids[i]+"\" title=\""+savetitles[i]+"\">"+savetitles[i]+"</a></li>");
+            }
+          }
+        </script>
+                </ul>
+        </div>
+        <div class="right2bot">
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+<!--content:end-->
+{dede:include filename="footer.htm"/}
+
+    <!--Footer:End-->
+</body>
+</html>

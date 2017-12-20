@@ -1,0 +1,36 @@
+<div class="leftr">
+            
+<div class="leib2">
+    <div class="tit">
+        <a title="克劳德产品中心" href="/product/">产品中心</a></div>
+    <div class="nr">
+	   {dede:channelartlist typeid="2"}
+       <h4 sid="0001,0008"><a href=" {dede:field.typeurl/}" title=" {dede:field.typename/}"> {dede:field.typename/}</a></h4>
+	   <ul>
+	   {dede:sql sql='Select * from ry_arctype where reid=~id~ ORDER BY id'} 
+	   <li><a href="[field:typedir function="cn_substr(@me,200,9) " /]" title="[field:typename/]">[field:typename/]</a></li>
+	    {/dede:sql}
+	   </ul>
+	   {/dede:channelartlist}
+	   
+	   <div class='clear'></div>
+    </div>
+</div>
+  <div class="leftbot">
+    </div>
+<script type="text/javascript">
+    productSelectCurrentPosition("");
+</script>
+ <div class="leib3 mt10">
+        <div class="tit">联系克劳德</div>
+        <div class="nr">
+            <img src="/images/leftlx.gif" >
+<h5 >{dede:global.company/}</h5>
+<p><span>公司电话：</span>{dede:global.rexian/}</p>
+<p><span>公司传真：</span>{dede:global.fax/}</p>
+<p><span>企业QQ：</span>{dede:global.qq/}</p>
+<p><span>公司地址：</span>{dede:global.add/}</p>
+</div></div>
+<div class="leftbot">
+    </div>
+        </div>

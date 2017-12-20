@@ -1,0 +1,255 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title>{dede:field.title/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link href="/Skins/default/resetcommon.css" rel="stylesheet" type="text/css" />
+    <link href="/Skins/default/Style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/JS/NSW_DetailsPro.js"></script>
+	<link rel="stylesheet" rev="stylesheet" href="/css/pshow2.css" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="/js/jqzoom.pack.1.0.1.js"></script>
+    <script language="javascript">
+<!--
+        window.onerror = function () { return true; }
+// -->
+    </script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+
+<script language="javascript" type="text/javascript">
+//产品标题
+var OBJ_TITLE = "{dede:field.title/}";
+//视频关键词
+var VIDEO_KEY = "";
+//权限ID
+var AUTHORITY_ID = "";
+//图片路径数组
+var ARR_IMG_PATH = [{dede:productimagelist}"[field:imgsrc/]",{/dede:productimagelist} ];
+var ColumnID=14;
+var ProductID=30;
+var PColumnID="8";
+var ColumnName="{dede:field.typename/}";
+var HitLayer="ProductHits";
+var Hits=200;
+var MARK = "product";
+var ARR_AD_MARK = ["product_detail_1"];
+var SID = "0001,0008,0014";
+var atts="";
+</script>
+
+<!--content:start-->
+<div class="content">
+    <div class="topadcs">
+        <a  target=_blank href='/product/'><img src='/UploadFiles/Others/20140310205656_58015.jpg'/></a>
+    </div>
+    <div class="right_pro">
+        <div class="righttop">
+        </div>
+        <div class="plc">
+            <span>当前位置:</span>{dede:field name='position'/}
+        </div>
+        <div class="rightbot">
+        </div>
+        <div class="righttop">
+        </div>
+        <div class="pro_main">
+            <div id="printableview">
+                <div class="pleft">
+                    <div class="mainbox">
+                        <div class="maincont">
+                            <div class="prodetailsinfo">
+                                <div class="proviewbox">
+                                    <div class="probigshow">
+                                        <a class="jqzoom" href="{dede:field.picname/}">
+                                            <img src="{dede:field.picname/}" class="js_goods_image_url"></a>
+                                    </div>
+                                    <div class="div_prothumb">
+                                        <div class="thumbporbox">
+                                            <ul class="ul_prothumb" id="img_list">
+                                            </ul>
+                                        </div>
+                                        <span class="span_prev span_prevb">prev</span><span class="span_next span_nextb">next</span>
+                                    </div>
+                                    <div class="div_prolinks">
+                                        <a id="a_enlarge" onclick="viewBigImage(30)" href="#">查看全部大图</a>
+                                    </div>
+                                </div>
+                                <div class="clear">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="/js/pshow2.js"></script>
+                </div>
+                <div class="pright">
+                    <div class="propar">
+                        <h4 class="corange">
+                            {dede:field.title/}</h4>
+                        <div class="cps pd_short">
+                            <div class="nr_list"><ul></ul><div class="clear"></div></div> {dede:field.info/}</div>
+                        <div class="star">
+                            <span>产品星级：</span><img  alt="3星" title="3星"  src="/Skins/default/Img/x3.gif"></div>
+                        <div class="pd_hotline">
+                            <span>订购批发热线：</span><span class="font_hotline">{dede:global.rexian/}</span>
+                        </div>
+                    </div>
+                    <div class="propar" style="text-align: center; padding-top: 20px;">
+                        <div class="proparp">
+                            <a href="#caigou">
+                                <img style="border: 0" src="/Skins/default/img/buynowsmalls.gif" alt="" /></a></div>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+                <div class="fenlei">
+                    <div class="tits">
+                        <a  class="cur"><span>产品详情</span></a>
+                        <div class="clear">
+                        </div>
+                    </div>
+                </div>
+                <div class="proinfo " id="detailvalue0">
+                   {dede:field.body/}
+                </div>
+                
+                <div class="caigou" id="caigou">
+                    <span class="span_1"><span class="red_x">*</span> 表示必填</span><strong>采购：{dede:field.title/}</strong></div>
+					 <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+                <table class="caigou_tab" id="tbForm1">
+                    <tr>
+                        <td width="120" class="tr">
+                            <span class="red_x">*</span> 联系人：
+                        </td>
+                        <td width="431">
+                            <input type="text" size="50" class="text" id="txtcontact" name="txtcontact" maxlength="20" />
+                            <span>请填写您的真实姓名</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tr">
+                            <span class="red_x">*</span> 手机号码：
+                        </td>
+                        <td>
+                            <input type="text" size="50" class="text" id="txttel" name="txttel" maxlength="11" />
+                            <span>请填写您的联系电话</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tr">
+                            <span class="red_x">*</span> 电子邮件：
+                        </td>
+                        <td>
+                            <input type="text" size="50" class="text" id="txtemail" name="txtemail" maxlength="20" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tt">
+                            采购意向描述：
+                        </td>
+                        <td>
+                            <textarea cols="80" rows="5" class="textarea" id="txtcontent" name="txtcontent" maxlength="200"></textarea>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                           <input type="hidden" name="dede_fields" value="txtcontact,text;txttel,text;txtemail,text;txtcontent,multitext" />
+                             <input type="hidden" name="dede_fieldshash" value="6ab2a49d83d5af9f20d06b498b1bd9dd" />
+                            <input type="submit" name="submit" class="b15" value="提 交" />
+                            <input type="reset" name="reset" class="b16" value="重 填" />
+                        </td>
+                    </tr>
+                </table></form>
+            </div>
+            <!--  <div class="ad3" id="cntrAd_0">
+            </div>-->
+            <div class="cp">
+                <div class="cptab">
+                    <a href="javascript:void(0)" onmouseover="switchProdTab(this)" target_id="cptab_relevant"
+                        class="cr">相关产品</a>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div id="cntrRelevantProd">
+                    <div id="cptab_relevant">
+                     {dede:likearticle row="3"}
+					 <dl><dt><a target='_blank' href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]"  title="[field:title/]"/></a></dt><dd class="t1"><a target='_blank' href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></dd><dd class="d1">[field:title/]</dd></dl>
+                    {/dede:likearticle}
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <div class="rightbot">
+        </div>
+    </div>
+    <div class="left_pro">
+        <div class="leib2">
+            <div class="tit">
+                <a title="产品中心" href="/product/">产品中心</a></div>
+            <div class="nr">
+                {dede:channelartlist typeid=2 row="10"} 
+                <h4>
+                    <a href="{dede:field.typeurl/}"
+                        target="_blank" title="{dede:field.typename/}">
+                        {dede:field.typename/}</a></h4>
+                <ul>
+                        {dede:sql sql='Select * from ry_arctype where reid=~id~ ORDER BY id'} 
+                            <li ><a href="[field:typedir function="cn_substr(@me,200,9) " /]" target="_blank" title="[field:typename/]">[field:typename/]</a></li>
+                            {/dede:sql}
+                        
+                    <div class="clear"></div>
+                </ul>
+            {/dede:channelartlist}
+            </div>
+        </div>
+        <div class="leftbot">
+        </div>
+        <div id="divHistoryRecommentCntr" class="leib2 mt10">
+        </div>
+        <div class="leib3 mt10">
+        <div class="tit">联系克劳德</div>
+        <div class="nr">
+            <img src="/images/leftlx.gif" >
+<h5 >{dede:global.company/}</h5>
+<p><span>公司电话：</span>{dede:global.rexian/}</p>
+<p><span>公司传真：</span>{dede:global.fax/}</p>
+<p><span>企业QQ：</span>{dede:global.qq/}</p>
+<p><span>公司地址：</span>{dede:global.add/}</p>
+</div></div>
+<div class="leftbot">
+    </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+<!--content:end-->
+<!--footer:start-->
+{dede:include filename="footer.htm"/}
+<!--footer:end-->
+<script type="text/javascript">
+    muneCur2();
+</script>
+<!--[if IE 6]>
+    <script src="/js/DD_belatedPNG.js"></script>
+
+
+    <![endif]-->
+<script type="text/javascript">    productLoad(); initCommonHeaderKeywords(MARK);
+    $(".jqzoom").jqzoom({ title: false, zoomWidth: 300, zoomHeight: 300, xOffset: 4 });
+</script>
+</body> </html>
+<!-- 返回顶部 -->
+

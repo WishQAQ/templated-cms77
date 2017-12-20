@@ -1,0 +1,138 @@
+@charset "utf-8";
+html{color:#000;background:#FFF; overflow-y:scroll;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+input,select{vertical-align:middle;}
+body{font:12px/1.231 arial,helvetica,clean,sans-serif;}
+select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}
+table{font-size:inherit;font:100%; border-collapse:collapse;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+.txtboxcs{ border:solid 1px #ccc; height:22px;}
+
+/*title*/
+h1 { font-size:32px;}
+h2 { font-size:26px;}
+h3 { font-size:20px;}
+h4 { font-size:14px;}
+h5 { font-size:12px;}
+h6 { font-size:10px;}
+
+/* -- 弹出窗口 -- */
+#mesbook1_c, #mesbook1{display:none;z-index:1001;width:398px;border:1px solid #ccc;background:#fff; padding-bottom:20px;}
+#mesbook1_c div, #mesbook1 div{ border:1px solid #E4E3E3; background:#EBECEB;height:18px; padding:4px .5em 0; margin-bottom:10px;}
+#mesbook1_c dl.b1, #mesbook1 dl.b1 { width:370px; margin:0 auto;}
+#mesbook1_c dl.b1 dt, #mesbook1 dl.b1 dt { float:left; width:105px; overflow:hidden; }
+#mesbook1_c dl.b1 dd, #mesbook1 dl.b1 dd { width:265px; float:right;}
+#mesbook1_c #mesbook1_cBtns, #mesbook1 #mesbook1Btns{padding-bottom:10px;}
+#mesbook1_c #mesbook1_cBtns input, #mesbook1 #mesbook1Btns input {margin-right:20px;}
+#nodata { padding:80px; padding-left:150px; border:solid 1px #eee;margin:10px 0; background:url(/Skins/Default/img/nodata.gif) no-repeat 20px 20px;}
+/* -- 外边距 -- */
+.m1 { margin:1px; }
+.m2 { margin:2px; }
+.m5 { margin:5px; }
+.m10 { margin:10px; }
+.mt2 { margin-top:2px;}
+.mt5 { margin-top:5px;}
+.mt8 { margin-top:8px;}
+.mt10 { margin-top:10px;}
+.mt12 { margin-top:12px;}
+.mt15 { margin-top:15px;}
+.mt20 { margin-top:20px;}
+.mt30 { margin-top:30px;}
+.mr5 { margin-right:5px;}
+.mr10 { margin-right:10px;}
+.mr12 { margin-right:12px;}
+.ml5 { margin-left:5px; }
+.ml7 { margin-left:7px; }
+.mb10 { margin-bottom:10px;}
+.ml12 { margin-left:12px; }
+.ml10 { margin-left:10px; }
+.ml20 { margin-left:20px; }
+
+/*加盟商在线下单*/
+.userorder{ width:700px;}
+.userorder tr{height:25px;}
+.userorder tr span{color:#f00;padding-left:4px;}
+
+.stf  { border:1px solid #ccc;  padding-left:140px ; padding-top:10px; padding-bottom:20px}
+.stf span{ color:#000; font-size:14px; line-height:30px ; font-weight:bold}
+.stf dd{ line-height:24px ;   font-size:14px }
+.stf p{ line-height:24px ;   font-size:14px }
+/*处理中动画占全屏*/
+#oran_div_processing{width:300px;padding:20px;z-index:9999;text-align:center;background:#fffeef;border:solid 1px #b8ab04;}
+.nor_tab { width:100%; border:solid 1px #ccc; margin-bottom:10px;}
+.nor_tab th { font-weight:bold; text-align:center; background:#f9f9f9;border:solid 1px #ccc; padding:6px 0;}
+.nor_tab td { padding:5px; border:solid 1px #ccc;}
+ul.t05_ul table { *margin-left:-15px;}/*滚动板IE补丁*/
+.left_pro { width:201px; float:right; overflow:hidden;margin-left:5px;}
+.right_pro { width:754px; float:left; display:inline;  overflow:hidden;}
+.left_prj { width:201px; float:right; overflow:hidden;margin-left:5px;}
+.right_prj{ width:754px; float:left; display:inline;  overflow:hidden;}
+.left_agent { width:201px; float:right; overflow:hidden;margin-left:5px;}
+.right_agent { width:754px; float:left; display:inline;  overflow:hidden;}
+.left_help { width:201px; float:right; overflow:hidden;margin-left:5px;}
+.right_help { width:754px; float:left; display:inline;  overflow:hidden;}
+
+.b15 {background: url(/Skins/Default/Img/SkinsVIBtn.jpg) no-repeat; border:0; cursor: pointer; overflow:hidden; }
+.b15 { background-position:-79px -650px; width:60px; height:24px; line-height:24px; color:#fff; font-size:14px; font-weight:bold; }
+
+#flashs{ position:relative; height:544px; overflow:hidden;}
+#flashs .bgitem{  z-index:1;position:absolute; top:0; }
+#flashs .btn{ position:absolute; z-index:7; bottom:15px; left:50%; margin-right:-450px; padding:5px 6px;}
+#flashs .btn span{ color:#F98904;  background:#fff; border:1px solid #FF4D4D; cursor: pointer;display: inline-block;margin-left: 5px;padding:2px 6px;}
+#flashs .btn span.cur{ background:#FF7300; color:#fff;}
+
+
+#roll_top, #fall, #ct
+{
+	position: relative;
+	cursor: pointer;
+	height: 72px;
+	width: 26px; z-index:999;
+}
+#roll_top
+{
+	background: url(/Skins/Default/Img/top.gif) no-repeat;
+}
+#fall
+{
+	background: url(/Skins/Default/Img/top.gif) no-repeat 0 -80px;
+}
+#ct
+{
+	background: url(/Skins/Default/Img/top.gif) no-repeat 0 -40px;
+}
+#roll
+{
+	display: block;
+	width: 15px;
+	margin-right: -500px;
+	position: fixed;
+	right: 50%;
+	top: 60%;
+	_margin-right: -505px;
+	_position: absolute;
+	_margin-top: 300px;
+	_top: expression(eval(document.documentElement.scrollTop));
+}
+
+
+#slideshow_wrapper {POSITION: relative;PADDING-BOTTOM: 0px;PADDING-LEFT: 0px;WIDTH: 960px;PADDING-RIGHT: 0px;HEIGHT: 396px;OVERFLOW: hidden;PADDING-TOP: 0px}
+#slideshow_footbar { right:45%; Z-INDEX: 5;POSITION: absolute;WIDTH: 100%;BOTTOM: 0px;HEIGHT: 30px}
+#slideshow_photo {POSITION: absolute;WIDTH: 100%;HEIGHT: 100%;CURSOR: pointer}
+#slideshow_photo A {Z-INDEX: 1;BORDER-BOTTOM: 0px;POSITION: absolute;BORDER-LEFT: 0px;MARGIN: 0px;DISPLAY: block;BORDER-TOP: 0px;TOP: 0px;BORDER-RIGHT: 0px;LEFT: 0px}
+#slideshow_footbar .slideshow-bt { background-color: #FFFFFF;border: 1px solid #DC0000;color: #FA6916;cursor: pointer;float: right;font-family: Arial;font-size: 12px;height: 16px;line-height: 16px;margin: 2px 1px;overflow: hidden;text-align: center;width: 16px;}
+#slideshow_footbar .bt-on { background-color: #DC0000;color: #fff;line-height: 18px;width: 18px;height: 18px;font-size: 12px;margin: 2px 1px;border: 0px; }
+
+ 

@@ -1,0 +1,1 @@
+<dl><dt><a target='_blank' href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]"  title="[field:title/]"/></a></dt><dd class="t1"><a target='_blank' href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></dd><dd class="d1">[field:title/]</dd></dl>
